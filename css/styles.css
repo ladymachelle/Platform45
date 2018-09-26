@@ -262,7 +262,6 @@ input {
   text-align: right;
 }
 .container {
-  height: 600px;
   margin: 0 auto;
   border-radius: 42.5px;
   padding: 30px;
@@ -270,11 +269,13 @@ input {
 
 .left {
   background-color: #ffd500;
-  height: 892px;
+  height: 630px;
+  border-radius: 25px 0 0 25px;
 }
 
 .right {
   background-color: #ffffff;
+  height: 630;
 }
 
 input[type="text"],
@@ -296,38 +297,38 @@ input[type="mobile"] {
   padding: 8px 0;
 }
 
-.button-cancel  {
-    width: 158.7px;
-    height: 53px;
-    border-radius: 5.3px;
-    background-color: #f5f8f9; 
-    color: 373d40;
-    font-size: 16px;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    text-transform: uppercase;
-    border:none;
+.button-cancel {
+  width: 158.7px;
+  height: 53px;
+  border-radius: 5.3px;
+  background-color: #f5f8f9;
+  color: 373d40;
+  font-size: 16px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
 }
 
-.button-save{
-    width: 158.7px;
-    height: 53px;
-    border-radius: 5.3px;
-    background-color: #60e6c5; 
-    color: #ffffff;
-    font-size: 16px;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    text-transform: uppercase;
-    border:none;
+.button-save {
+  width: 158.7px;
+  height: 53px;
+  border-radius: 5.3px;
+  background-color: #60e6c5;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
 }
 
-.button-container{
-    float:right;
+.button-container {
+  float: right;
 }
