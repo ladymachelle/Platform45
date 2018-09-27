@@ -6,19 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Technical Frontend Challenge</title>
 </head>
 
 <body>
     <div class="container row">
         <div class="left col-1">
-            <img class="user" src="images/profile-image.png" alt="">
+            <img class="" src="images/profile-image.png" alt="">
             <h1>Front-end challenge!</h1>
             <h2>This is a design that you will need to code up and impress us.</h2>
-            <img class="user" src="images/user.png" alt="">
+            <img class="arrow" src="images/arrow.png" alt="">
         </div>
 
         <div class="right col-2">
+            <div id="contact">
+                <p>My World today.</p>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. View all days eu
+                    libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+                    Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo
+                    vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum
+                    orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.
+                    Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu
+                    erat. Aliquam erat</p>
+            </div>
             <form action="#" method="post">
                 <div class="block">
                     <label for="date">Name</label>
@@ -26,8 +38,9 @@
                 </div>
                 <div class="block">
                     <label for="gendar">Gendar</label>
-                    <input type="radio" value="male">
-                    <input type="radio" value="female">
+                    <input type="checkbox" name='thing1' id="thing1" /><label for="thing1"></label>
+                    <input type="checkbox" name='thing1' id="thing1" /><label for="thing1"></label>
+
                 </div>
                 <div class="block">
                     <label for="date">Date of birth</label>
@@ -46,6 +59,7 @@
                     <label for="customer id">Customer ID</label>
                     <input type="text" Name="Customer ID" placeholder="Customer ID" required="">
                 </div>
+
                 <div class="button-container">
                     <input type="submit" class="button-cancel" value="Cancel">
                     <input type="submit" class="button-save" value="Save">

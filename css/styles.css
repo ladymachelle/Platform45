@@ -170,9 +170,8 @@ img {
 }
 
 body {
-  font-family: "Arial";
+  font-family: "ArialMT";
   color: #383838;
-  background-color: #ffffff;
   text-align: center;
 }
 
@@ -181,17 +180,17 @@ body a:hover,
 input[type="button"],
 input[type="submit"],
 input[type="submit"]:hover {
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
+  transition: delay 250ms ease-in-out;
+  -webkit-transition: delay 250ms ease-in-out;
+  -moz-transition: delay 250ms ease-in-out;
+  -o-transition: delay 250ms ease-in-out;
+  -ms-transition: delay 250ms ease-in-out;
   text-decoration: none;
 }
 
 h1 {
   font-family: "Arial-BoldMT";
-  font-size: 36px;
+  font-size: 24px;
   width: 357px;
   height: 43px;
   color: #383838;
@@ -201,17 +200,12 @@ h1 {
 }
 
 h2 {
-  font-family: "ArialMT";
-  font-size: 22px;
+  font-size: 18px;
   width: 351.7px;
   height: 55.3px;
   color: #383838;
   line-height: 1.26;
   margin: 0 auto;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
   text-align: center;
   padding-top: 30px;
 }
@@ -224,9 +218,10 @@ h2 {
   clear: both;
   display: table;
 }
+
 [class*="col-"] {
   float: left;
-  padding: 40px;
+  padding: 25px;
 }
 
 .col-1 {
@@ -249,7 +244,8 @@ form input {
 }
 
 label {
-  padding: 20px 20px 30px 0;
+  font-size: 14.8px;
+  padding: 20px 40px 30px 0;
   display: inline-block;
 }
 
@@ -262,33 +258,35 @@ input {
   text-align: right;
 }
 .container {
-  margin: 0 auto;
-  border-radius: 42.5px;
+  display: inline-block;
   padding: 30px;
+  width: 75%;
 }
 
 .left {
   background-color: #ffd500;
   height: 630px;
   border-radius: 25px 0 0 25px;
+  /* box-shadow: 8px 10px 13px 13px #f5f8f9; */
 }
 
 .right {
   background-color: #ffffff;
-  height: 630;
+  height: 630px;
+  border-radius: 0px 25px 25px 0px;
+  /* box-shadow: 5px 10px 8px #f5f8f9; */
 }
 
 input[type="text"],
 input[type="password"],
 input[type="mobile"] {
   padding: 12px;
-  border: 1px solid #ccc;
+  border: none;
   resize: vertical;
   width: 380.9px;
   height: 53px;
   border-radius: 5.3px;
-  background-color: rgba(245, 248, 249, 0.3);
-  border: solid 1.2px #cad7dd;
+  background-color: #f5f8f9;
 }
 
 .date {
@@ -302,9 +300,10 @@ input[type="mobile"] {
   height: 53px;
   border-radius: 5.3px;
   background-color: #f5f8f9;
-  color: 373d40;
+  color: #373d40;
   font-size: 16px;
   padding: 15px 32px;
+  margin-right: 18px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -331,4 +330,51 @@ input[type="mobile"] {
 
 .button-container {
   float: right;
+  margin-top: 30px;
+}
+
+.female {
+  background-image: url("/images/female.png");
+}
+
+.arrow {
+  margin-top: 100px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input#thing1[type="checkbox"] + label {
+  background-image: url("../images/female.png");
+  border-color: rgb(56, 20, 20);
+  border-style: solid;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  padding: 0 0 0 0px;
+}
+
+input#thing1[type="checkbox"]:checked + label {
+  border-color: red;
+  border-style: solid;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  padding: 0 0 0 0px;
+}
+
+#contact {
+  display: none;
+  background: grey;
+  color: #fff;
+  padding: 10px;
+  width:100%;
+  Height:100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .col-1{
+        width: 100%;
+    }
 }
