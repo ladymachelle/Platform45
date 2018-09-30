@@ -1,0 +1,12 @@
+@mixin breakpoint-min-small{
+    @media (min-width: 720px) {
+      @content;
+    }
+  }
+
+
+@mixin breakpoint-min-medium {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}

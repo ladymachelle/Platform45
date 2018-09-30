@@ -1,0 +1,146 @@
+.button-cancel {
+  width: 158.7px;
+  height: 53px;
+  border-radius: 5.3px;
+  background-color: #f5f8f9;
+  color: #373d40;
+  font-size: 16px;
+  padding: 15px 32px;
+  margin-right: 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none; }
+
+.button-save {
+  width: 158.7px;
+  height: 53px;
+  border-radius: 5.3px;
+  background-color: #60e6c5;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none; }
+
+.button-container {
+  float: right;
+  margin-top: 30px; }
+
+.arrow {
+  margin-top: 100px; }
+
+form {
+  float: left;
+  margin-top: 50px; }
+
+form input {
+  width: 158.7px;
+  height: 53px;
+  border-radius: 5.3px;
+  background-color: #f5f8f9; }
+
+label {
+  font-size: 14.8px;
+  padding: 20px 40px 30px 0;
+  display: inline-block; }
+
+input {
+  padding: 0.7em;
+  margin-bottom: 0.5rem; }
+
+.block {
+  text-align: right; }
+
+.container {
+  display: inline-block;
+  padding: 30px;
+  width: 75%; }
+
+.left {
+  background-color: #ffd500;
+  height: 630px;
+  border-radius: 25px 0 0 25px;
+  /* box-shadow: 8px 10px 13px 13px #f5f8f9; */ }
+
+.right {
+  background-color: #ffffff;
+  height: 630px;
+  border-radius: 0px 25px 25px 0px;
+  /* box-shadow: 5px 10px 8px #f5f8f9; */ }
+
+input[type="text"],
+input[type="password"],
+input[type="mobile"] {
+  padding: 12px;
+  border: none;
+  resize: vertical;
+  width: 380.9px;
+  height: 53px;
+  border-radius: 5.3px;
+  background-color: #f5f8f9; }
+
+.date {
+  background: url(../images/date-icon.png) no-repeat 95.5% 45% #fff;
+  cursor: pointer;
+  padding: 8px 0; }
+
+input[type="checkbox"] {
+  display: none; }
+
+input#thing1[type="checkbox"] + label {
+  background-image: url("../images/female.png");
+  border-color: #381414;
+  border-style: solid;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  padding: 0 0 0 0px; }
+
+input#thing1[type="checkbox"]:checked + label {
+  border-color: red;
+  border-style: solid;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  padding: 0 0 0 0px; }
+
+#contact {
+  display: none;
+  background: grey;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  Height: 100%; }
+
+.female {
+  background-image: url("/images/female.png"); }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+[class*="col-"] {
+  float: left;
+  padding: 25px; }
+
+.col-1 {
+  width: 40%; }
+
+.col-2 {
+  width: 60%; }
+
+@media screen and (max-width: 1024px) {
+  .col-1 {
+    width: 100%; } }

@@ -1,0 +1,28 @@
+@import"variables";
+
+  * {
+    box-sizing: border-box;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 25px;
+  }
+  
+  .col-1 {
+    width: 40%;
+  }
+  .col-2 {
+    width: 60%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .col-1{
+        width: 100%;
+    }
+}

@@ -1,0 +1,43 @@
+@import"variables";
+
+body {
+    font-family: "ArialMT";
+    color:$black;
+    text-align: center;
+  }
+  
+  body a,
+  body a:hover,
+  input[type="button"],
+  input[type="submit"],
+  input[type="submit"]:hover {
+    transition: delay 250ms ease-in-out;
+    -webkit-transition: delay 250ms ease-in-out;
+    -moz-transition: delay 250ms ease-in-out;
+    -o-transition: delay 250ms ease-in-out;
+    -ms-transition: delay 250ms ease-in-out;
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-family: $font-stack-secondary;
+    font-size: 24px;
+    width: 357px;
+    height: 43px;
+    color: #383838;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 18px;
+    width: 351.7px;
+    height: 55.3px;
+    color: #383838;
+    line-height: 1.26;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+  }
+  

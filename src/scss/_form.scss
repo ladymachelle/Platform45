@@ -1,0 +1,192 @@
+@import"variables";
+
+form {
+  float: left;
+  margin-top: 50px;
+}
+
+form input {
+  width: 158.7px;
+  height: 53px;
+  border-radius: 5.3px;
+  background-color: #f5f8f9;
+}
+
+label {
+  font-size: 14.8px;
+  padding: 20px 40px 30px 0;
+  display: inline-block;
+}
+
+input {
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+
+.block {
+  text-align: right;
+}
+.container {
+  display: inline-block;
+  padding: 30px;
+  width: 75%;
+}
+
+.left {
+  background-color: #ffd500;
+  height: 630px;
+  border-radius: 25px 0 0 25px;
+  /* box-shadow: 8px 10px 13px 13px #f5f8f9; */
+}
+
+.right {
+  background-color: #ffffff;
+  height: 630px;
+  border-radius: 0px 25px 25px 0px;
+  /* box-shadow: 5px 10px 8px #f5f8f9; */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="mobile"] {
+  padding: 12px;
+  border: none;
+  resize: vertical;
+  width: 380.9px;
+  height: 53px;
+  border-radius: 5.3px;
+  background-color: #f5f8f9;
+}
+
+.date {
+  background: url(../images/calendar.png) no-repeat 95.5% 45% #fff;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+/* The container */
+.containerform {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerform input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+//gendar
+.radio-btns.agileits.w3layouts {
+	margin-top: 10px;
+}
+.cc-selector.wthreeselector {
+	width: 26.3%;
+	float: left;
+    text-align: left;
+    margin-bottom:10px;
+}
+
+.wthreeselector p {
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 40px;
+	font-size: 13px;
+}
+
+.cc-selector input {
+	margin: 0;
+	padding: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.visa {
+	background-image: url("../images/male.png");
+}
+
+.mastercard {
+	background-image: url("../images/female.png");
+}
+
+.cc-selector input:active +.drinkcard-cc {
+	opacity: .9;
+}
+
+.cc-selector input:checked +.drinkcard-cc {
+	-webkit-filter: none;
+	-moz-filter: none;
+	filter: none;
+}
+
+.drinkcard-cc{
+	cursor: pointer;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-color: $pale-grey;
+    border-radius:30px;
+	display: inline-block;
+	width: 52.9px;
+	height: 53px;
+}
+
+.drinkcard-cc:hover {
+	-webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+	-moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+	filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+
+input[type=radio]{
+    display:none;
+}
+
+.button-cancel {
+  width: 158.7px;
+  height: 53px;
+  border-radius: 5.3px;
+  background-color: $cloudy-blue;
+  color:$charcoal-grey;
+  font-size: 16px;
+  padding: 15px 32px;
+  margin-right: 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button-save {
+  width: 158.7px;
+  height: 53px;
+  border-radius: 5.3px;
+  background-color: #60e6c5;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button-container {
+  float: right;
+  margin-top: 30px;
+}
+
+.arrow {
+  margin-top: 100px;
+}
+
