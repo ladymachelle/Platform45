@@ -78,12 +78,19 @@ input {
   margin-bottom: 0.5rem; }
 
 .block {
-  text-align: right; }
+  text-align: left; }
+  @media (min-width: 1024px) {
+    .block {
+      text-align: right; } }
 
 .container {
   display: inline-block;
-  padding: 30px;
-  width: 75%; }
+  padding: 2px;
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .container {
+      padding: 30px;
+      width: 75%; } }
 
 .left {
   background-color: #ffd500;
@@ -99,7 +106,8 @@ input {
 
 input[type="text"],
 input[type="password"],
-input[type="mobile"] {
+input[type="mobile"],
+input[type="date"] {
   padding: 12px;
   border: none;
   resize: vertical;
@@ -158,7 +166,7 @@ input[type="mobile"] {
   background-image: url("../images/female.png"); }
 
 .cc-selector input:active + .drinkcard-cc {
-  opacity: .9; }
+  opacity: 0.9; }
 
 .cc-selector input:checked + .drinkcard-cc {
   -webkit-filter: none;
@@ -180,7 +188,7 @@ input[type="mobile"] {
   -moz-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
   filter: brightness(1.2) grayscale(0.5) opacity(0.9); }
 
-input[type=radio] {
+input[type="radio"] {
   display: none; }
 
 .button-cancel {
@@ -247,3 +255,57 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.panel-group {
+  width: 430px;
+  z-index: 100;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateX(-100%) rotate(-90deg);
+  -webkit-transform-origin: right top;
+  -moz-transform: translateX(-100%) rotate(-90deg);
+  -moz-transform-origin: right top;
+  -o-transform: translateX(-100%) rotate(-90deg);
+  -o-transform-origin: right top;
+  transform: translateX(-100%) rotate(-90deg);
+  transform-origin: right top; }
+
+.panel-heading {
+  width: 430px; }
+
+.panel-title {
+  height: 18px; }
+
+.panel-title a {
+  float: right;
+  text-decoration: none;
+  padding: 10px 430px;
+  margin: -10px -430px; }
+
+.panel-body {
+  height: 830px; }
+
+.panel-group img {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateX(0%) rotate(90deg);
+  -webkit-transform-origin: left top;
+  -moz-transform: translateX(0%) rotate(90deg);
+  -moz-transform-origin: left top;
+  -o-transform: translateX(0%) rotate(90deg);
+  -o-transform-origin: left top;
+  transform: translateX(0%) rotate(90deg);
+  transform-origin: left top; }
+
+.panel-group p {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateX(0%) rotate(90deg);
+  -webkit-transform-origin: left top;
+  -moz-transform: translateX(0%) rotate(90deg);
+  -moz-transform-origin: left top;
+  -o-transform: translateX(0%) rotate(90deg);
+  -o-transform-origin: left top;
+  transform: translateX(0%) rotate(90deg);
+  transform-origin: left top; }
+
+.panel-group .panel img {
+  margin-left: 400px;
+  position: absolute; }

@@ -1,4 +1,4 @@
-@import"variables";
+@import "variables";
 
 form {
   float: left;
@@ -24,12 +24,21 @@ input {
 }
 
 .block {
-  text-align: right;
+  text-align: left;
+
+  @media (min-width: 1024px) {
+    text-align: right;
+  }
 }
 .container {
   display: inline-block;
-  padding: 30px;
-  width: 75%;
+  padding: 2px;
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    padding: 30px;
+    width: 75%;
+  }
 }
 
 .left {
@@ -48,7 +57,8 @@ input {
 
 input[type="text"],
 input[type="password"],
-input[type="mobile"] {
+input[type="mobile"],
+input[type="date"] {
   padding: 12px;
   border: none;
   resize: vertical;
@@ -84,68 +94,67 @@ input[type="mobile"] {
 
 //gendar
 .radio-btns.agileits.w3layouts {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 .cc-selector.wthreeselector {
-	width: 26.3%;
-	float: left;
-    text-align: left;
-    margin-bottom:10px;
+  width: 26.3%;
+  float: left;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 .wthreeselector p {
-	text-align: left;
-	padding-top: 5px;
-	padding-left: 40px;
-	font-size: 13px;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 40px;
+  font-size: 13px;
 }
 
 .cc-selector input {
-	margin: 0;
-	padding: 0;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .visa {
-	background-image: url("../images/male.png");
+  background-image: url("../images/male.png");
 }
 
 .mastercard {
-	background-image: url("../images/female.png");
+  background-image: url("../images/female.png");
 }
 
-.cc-selector input:active +.drinkcard-cc {
-	opacity: .9;
+.cc-selector input:active + .drinkcard-cc {
+  opacity: 0.9;
 }
 
-.cc-selector input:checked +.drinkcard-cc {
-	-webkit-filter: none;
-	-moz-filter: none;
-	filter: none;
+.cc-selector input:checked + .drinkcard-cc {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
 }
 
-.drinkcard-cc{
-	cursor: pointer;
-	background-size: contain;
-    background-repeat: no-repeat;
-    background-color: $pale-grey;
-    border-radius:30px;
-	display: inline-block;
-	width: 52.9px;
-	height: 53px;
+.drinkcard-cc {
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: $pale-grey;
+  border-radius: 30px;
+  display: inline-block;
+  width: 52.9px;
+  height: 53px;
 }
 
 .drinkcard-cc:hover {
-	-webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
-	-moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
-	filter: brightness(1.2) grayscale(.5) opacity(.9);
+  -webkit-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  -moz-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  filter: brightness(1.2) grayscale(0.5) opacity(0.9);
 }
 
-
-input[type=radio]{
-    display:none;
+input[type="radio"] {
+  display: none;
 }
 
 .button-cancel {
@@ -153,7 +162,7 @@ input[type=radio]{
   height: 53px;
   border-radius: 5.3px;
   background-color: $cloudy-blue;
-  color:$charcoal-grey;
+  color: $charcoal-grey;
   font-size: 16px;
   padding: 15px 32px;
   margin-right: 18px;
@@ -189,4 +198,3 @@ input[type=radio]{
 .arrow {
   margin-top: 100px;
 }
-
