@@ -1,12 +1,17 @@
-@mixin breakpoint-min-small{
-    @media (min-width: 720px) {
-      @content;
-    }
+@mixin breakpoint-medium {
+  @media screen and (max-width: 769px) {
+    @content;
   }
+}
 
+@mixin breakpoint-small {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
 
-@mixin breakpoint-min-medium {
-  @media (min-width: 1024px) {
+@mixin breakpoint-large {
+  @media screen and (max-width: 1024px) {
     @content;
   }
 }

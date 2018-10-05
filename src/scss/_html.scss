@@ -1,43 +1,43 @@
-@import"variables";
+@import "variables";
 
 body {
-    font-family: "ArialMT";
-    color:$black;
-    text-align: center;
-  }
-  
-  body a,
-  body a:hover,
-  input[type="button"],
-  input[type="submit"],
-  input[type="submit"]:hover {
-    transition: delay 250ms ease-in-out;
-    -webkit-transition: delay 250ms ease-in-out;
-    -moz-transition: delay 250ms ease-in-out;
-    -o-transition: delay 250ms ease-in-out;
-    -ms-transition: delay 250ms ease-in-out;
-    text-decoration: none;
-  }
-  
-  h1 {
-    font-family: $font-stack-secondary;
-    font-size: 24px;
-    width: 357px;
-    height: 43px;
-    color: #383838;
-    font-weight: bold;
-    text-align: center;
-    margin: 0 auto;
-  }
-  
-  h2 {
-    font-size: 18px;
-    width: 351.7px;
-    height: 55.3px;
-    color: #383838;
-    line-height: 1.26;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 30px;
-  }
-  
+  font-family: 'arial', 'helvetica', sans-serif;
+  color: $black;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: 90%;
+  margin: 6.4% auto;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 55px #b6bdc0;
+  -moz-box-shadow: 0 0 55px #b6bdc0;
+  -ms-box-shadow: 0 0 55px #b6bdc0;
+  -o-box-shadow: 0 0 55px #b6bdc0;
+  box-shadow: 0 0 55px #b6bdc0;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 24px;
+  color: #383838;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 18px;
+  color: #383838;
+  line-height: 1.26;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  font-weight:normal;
+}

@@ -11,87 +11,68 @@
 </head>
 
 <body>
-    <div class="container row">
-        <div class="left col-1">
-            <img class="" src="images/profile-image.png" alt="">
-            <h1>Front-end challenge!</h1>
-            <h2>This is a design that you will need to code up and impress us.</h2>
-            <img class="arrow" src="images/arrow.png" alt="">
-        </div>
-
-        <div class="right col-2">
-             <!-- <div >
-                <p>My World today.</p>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. View all days eu
-                    libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-                    Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo
-                    vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum
-                    orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.
-                    Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu
-                    erat. Aliquam erat</p>
-            </div>  -->
-            <form action="#" method="post">
-                <div class="block">
-                    <label for="date">Name</label>
-                    <input type="text" Name="Name" placeholder="Kendall Jenner" required="">
-                </div>
-                <div class="block">
-                    <div class="radio-btns agileits w3layouts">
-                        <div class="cc-selector wthreeselector">
-                            <p>Gender</p>
-                        </div>
-                        <div class="cc-selector wthreeselector">
-                            <input id="visa" type="radio" name="credit-card" value="visa">
-                            <label class="drinkcard-cc visa" for="visa"></label>
-                        </div>
-                        <div class="cc-selector wthreeselector">
-                            <input id="mastercard" type="radio" name="credit-card" value="mastercard">
-                            <label class="drinkcard-cc mastercard" for="mastercard"></label>
-                        </div>
+    <div class="container">
+        <section class="grid grid_4 small_12 medium_12 large_5">
+            <div class="form_left_panel">
+                <img class="profile" src="images/profile-image.png" alt="">
+                <h1 class="user_heading">Front-end challenge!</h1>
+                <h2 class="user_description">This is a design that you will need to code up and impress us.</h2>
+                <p class="toggle"><img class="arrow" src="images/arrow.png" alt=""><p>
+            </div>
+        </section>
+        <section class="grid grid_7 small_12 medium_12">
+            <form class="form">
+                <fieldset class="form_fieldset_group">
+                    <label class="grid grid_3 form_label small_12 medium_12" for="name">Name</label>
+                    <input class="grid grid_8 form_input small_12 medium_12" type="text" Name="Name" placeholder="Kendall Jenner">
+                </fieldset>
+                <fieldset class="form_fieldset_group">
+                    <label class="grid grid_3  small_12 medium_12 form_label">Gender</label>
+                    <div class="col_sm_12 col_m_12 form_group__radio">
+                        <label class="form_input__radio male" for="male">
+                            <input class="radio_hidden" id="male" type="radio" value="male" name="gender"> Male
+                        </label>
+                        <label class="form_input__radio female" for="female">
+                            <input class="radio_hidden" id="female" type="radio" value="female" name="gender"> Female
+                        </label>
                     </div>
-                </div>
-                <div class="block">
-                    <label for="date">Date of birth</label>
-                    <input class="date agileits w3layouts" id="datepicker1" type="text" value="Date" onfocus="this.value = '';"
-                        onblur="if (this.value == '') {this.value = '';}" required="">
-                </div>
-                <div class="block">
-                    <label for="email">Email</label>
-                    <input type="text" name="Email" placeholder="kendall@email.com" required="">
-                </div>
-                <div class="block">
-                    <label for="mobile">Mobile</label>
-                    <input type="mobile" Name="mobile" placeholder="mobile" required="">
-                </div>
-                <div class="block">
-                    <label for="customer id">Customer ID</label>
-                    <input type="text" Name="Customer ID" placeholder="Customer ID" required="">
-                </div>
-                <div class="block">
-                    <div class="radio-btns agileits w3layouts">
-                        <div class="cc-selector wthreeselector">
-                            <p>Membership</p>
+                </fieldset>
+                <fieldset class="form_fieldset_group">
+                    <label class="grid grid_3 form_label small_12 medium_12" for="date">Date of birth</label>
+                    <input class="grid grid_8 form_input medium_12" type="text" name="date" placeholder="date">
+                </fieldset>
+                <fieldset class="form_fieldset_group">
+                    <label class="grid grid_3 form_label small_12 medium_12" for="email">Email</label>
+                    <input class="grid grid_8 form_input small_12 medium_12" type="text" name="Email" placeholder="kendall@email.com">
+                </fieldset>
+                <fieldset class="form_fieldset_group">
+                    <label class="grid grid_3  form_label small_12 medium_12" for="mobile">Mobile</label>
+                    <input class="grid grid_8 form_input small_12 medium_12" type="mobile" Name="mobile" placeholder="mobile">
+                </fieldset>
+                <fieldset class="form_fieldset_group">
+                    <label class="grid grid_3 form_label small_12 medium_12" for="customer id">Customer ID</label>
+                    <input class="grid grid_8 form_input small_12 medium_12" type="text" Name="Customer ID" placeholder="Customer ID">
+                </fieldset>
+                <fieldset class="form_fieldset_group">
+                        <label class="grid grid_3  small_12 medium_12 form_label">Membership</label>
+                        <div class="col_sm_12 col_m_12 form_group__radio">
+                          <label class="form_input__radio membership" for="classic">
+                            <input class="radio_hidden" id="classic" type="radio" value="classic" name="membership"> Classic
+                          </label>
+                          <label class="form_input__radio membership" for="silver">
+                            <input class="radio_hidden" id="silver" type="radio" value="silver" name="membership"> Silver
+                          </label>
+                          <label class="form_input__radio membership" for="gold">
+                            <input class="radio_hidden" id="gold" type="radio" value="gold" name="membership"> Gold
+                          </label>
                         </div>
-                        <div class="cc-selector wthreeselector">
-                            <input id="visa" type="radio" name="credit-card" value="visa">
-                            <label class="drinkcard-cc visa" for="visa"></label>
-                        </div>
-                        <div class="cc-selector wthreeselector">
-                            <input id="mastercard" type="radio" name="credit-card" value="mastercard">
-                            <label class="drinkcard-cc mastercard" for="mastercard"></label>
-                        </div>
-                    </div>
-                </div>
-                <div class="button-container">
-                    <input type="submit" class="button-cancel" value="Cancel">
-                    <input type="submit" class="button-save" value="Save">
-                </div>
+                      </fieldset>
+                <fieldset class="form_fieldset_group">
+                    <input class="button button_grey small_12 medium_12" type="reset" value="cancel">
+                    <input class="button button_blue small_12 medium_12" type="submit" value="save">
+                </fieldset>
             </form>
-        </div>
-
-
-
+        </section>
     </div>
 </body>
 
