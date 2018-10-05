@@ -14,25 +14,25 @@
     <div class="container">
         <section class="grid grid_4 small_12 medium_12 large_5">
             <div class="form_left_panel">
-                <img class="profile" src="images/profile-image.png" alt="">
+                <img class="profile" src="images/profile-image.png">
                 <h1 class="user_heading">Front-end challenge!</h1>
                 <h2 class="user_description">This is a design that you will need to code up and impress us.</h2>
-                <p class="toggle"><img class="arrow" src="images/arrow.png" alt=""><p>
+                <img class="arrow" src="images/arrow.png">
             </div>
         </section>
         <section class="grid grid_7 small_12 medium_12">
             <form class="form">
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3 form_label small_12 medium_12" for="name">Name</label>
-                    <input class="grid grid_8 form_input small_12 medium_12" type="text" Name="Name" placeholder="Kendall Jenner">
+                    <input class="grid grid_8 form_input small_12 medium_12" required type="text" Name="Name" placeholder="Kendall Jenner">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3  small_12 medium_12 form_label">Gender</label>
                     <div class="col_sm_12 col_m_12 form_group__radio">
-                        <label class="form_input__radio male" for="male">
-                            <input class="radio_hidden" id="male" type="radio" value="male" name="gender"> Male
+                        <label class="form_input__radio gendar male" for="male">
+                            <input class="radio_hidden" required id="male" type="radio" value="male" name="gender"> Male
                         </label>
-                        <label class="form_input__radio female" for="female">
+                        <label class="form_input__radio gendar female" for="female">
                             <input class="radio_hidden" id="female" type="radio" value="female" name="gender"> Female
                         </label>
                     </div>
@@ -54,19 +54,21 @@
                     <input class="grid grid_8 form_input small_12 medium_12" type="text" Name="Customer ID" placeholder="Customer ID">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
-                        <label class="grid grid_3  small_12 medium_12 form_label">Membership</label>
-                        <div class="col_sm_12 col_m_12 form_group__radio">
-                          <label class="form_input__radio membership" for="classic">
-                            <input class="radio_hidden" id="classic" type="radio" value="classic" name="membership"> Classic
-                          </label>
-                          <label class="form_input__radio membership" for="silver">
-                            <input class="radio_hidden" id="silver" type="radio" value="silver" name="membership"> Silver
-                          </label>
-                          <label class="form_input__radio membership" for="gold">
+                    <label class="grid grid_3  small_12 medium_12 form_label">Membership</label>
+                    <div class="col_sm_12 col_m_12 form_group__radio">
+                        <label class="form_input__radio membership" for="classic">
+                            <input class="radio_hidden" id="classic" type="radio" value="classic" name="membership">
+                            Classic
+                        </label>
+                        <label class="form_input__radio membership" for="silver">
+                            <input class="radio_hidden" id="silver" type="radio" value="silver" name="membership">
+                            Silver
+                        </label>
+                        <label class="form_input__radio membership" for="gold">
                             <input class="radio_hidden" id="gold" type="radio" value="gold" name="membership"> Gold
-                          </label>
-                        </div>
-                      </fieldset>
+                        </label>
+                    </div>
+                </fieldset>
                 <fieldset class="form_fieldset_group">
                     <input class="button button_grey small_12 medium_12" type="reset" value="cancel">
                     <input class="button button_blue small_12 medium_12" type="submit" value="save">

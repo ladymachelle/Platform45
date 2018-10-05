@@ -1,7 +1,7 @@
 @import "variables";
 
 .form {
-  padding: 70px 50px;
+  padding: 39px 50px;
   margin: 0 0 14px;
 }
 
@@ -23,12 +23,33 @@
   padding: 20px;
   background: $pale-grey;
   border-radius: 8px;
-  transition: (all 250ms ease-in-out 250ms);
+  -webkit-transition: all 250ms ease-in;
+  -moz-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.form_input:focus, .form_input:active {
+  border: 1.2px solid #cad7dd;
+  background: #f5f8f9;
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+}
+
+.form_input:hover {
+  background: #e0e5eb;
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+}
+
+:required {
+  border:1px solid $sunflower-yellow;
 }
 
 .form_left_panel {
   background-color: $sunflower-yellow;
- 
+
   @media (min-width: 1024px) {
     border-radius: 25px 0 0 25px;
   }
@@ -37,7 +58,18 @@
 .form_left_panel img.profile {
   width: 60%;
   margin: 50px 0;
+  -webkit-transition: all 250ms ease-in;
+  -moz-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
 }
+
+.form_left_panel img:hover {
+  -webkit-transition: all 250ms ease-in;
+  -moz-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+
 .form_radio_group {
   position: relative;
   display: block;
@@ -64,7 +96,6 @@
   transition: all 250ms ease-in-out 250ms;
 }
 
-
 .form_input__radio:before {
   content: "";
   display: inline-block;
@@ -73,7 +104,6 @@
   width: 50px;
   height: 50px;
   top: 20px;
-  
   background-color: #f5f8f9;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -83,89 +113,109 @@
   transition: all 250ms ease-in-out 250ms;
 }
 
-  .form_input__radio.male:before {
-    background-image: url(../images/male.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  
-  .form_input__radio.female:before {
-    background-image: url(../images/female.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  
+.form_input__radio.male:before {
+  background-image: url(../images/male.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.form_input__radio.female:before {
+  background-image: url(../images/female.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.form_input__radio.female:hover::before {
+  border:1px solid $pale-grey;
+}
+
+.form_input__radio.male:hover::before {
+  border:1px solid $pale-grey;
+}
+
+.form_input__radio.membership {
+  margin-right: 21px;
+}
+
+.form_input__radio.membership:before {
+  background-image: url(../images/card.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.form_input__radio.membership.checked:before {
+  background-image: url(../images/card.png);
+  background-color: #b1bfcd;
+}
+
+.form_input__radio.membership:hover::before {
+  border:1px solid $pale-grey;
+}
+
+@media screen and (max-width: 1024px) {
   .form_input__radio.membership {
     margin-right: 21px;
   }
-  
-  .form_input__radio.membership:before {
-    background-image: url(../images/card.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  
-  .form_input__radio.membership.checked:before {
-    background-image: url(../images/card.png);
-    background-color: #b1bfcd;
-  }
-  
-  .form_input__radio.membership:hover::before {
-    background-image: url(../images/card.png);
-  }
-  
-  @media screen and (max-width: 1024px) {
-    .form_input__radio.membership {
-      margin-right: 21px;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .form_input__radio.membership {
-      margin-right: 10px;
-    }
-  }
-  
-  @media screen and (max-width: 240px) {
-    .form_input__radio.membership {
-      margin-right: 10px;
-    }
-  }
+}
 
-
-  .radio_buttons {
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1.2px solid transparent;
-    background-color: #f5f8f9;
-    -webkit-transition: all 250ms ease-in;
-    -moz-transition: all 250ms ease-in;
-    transition: all 250ms ease-in;
+@media screen and (max-width: 768px) {
+  .form_input__radio.membership {
+    margin-right: 10px;
   }
-
-  .form_left_panel {
-    background-color: $sunflower-yellow;
-
-    @media (min-width: 1024px) {
-      border-radius: 25px 0 0 25px;
-    }
+}
+@media screen and (max-width: 240px) {
+  .form_input__radio.membership {
+    margin-right: 10px;
   }
+}
 
-  .form_left_panel img.profile {
-    width: 60%;
-    margin: 50px 0;
+@media screen and (max-width: 1024px) {
+  .form_input__radio.gendar {
+    margin-right: 21px;
   }
+}
 
-  .date {
-    background: url(../images/calendar.png) no-repeat 95.5% 45% #fff;
-    cursor: pointer;
-    padding: 8px 0;
+@media screen and (max-width: 768px) {
+  .form_input__radio.gendar {
+    margin-right: 10px;
   }
+}
+@media screen and (max-width: 240px) {
+  .form_input__radio.gendar {
+    margin-right: 10px;
+  }
+}
 
+.radio_buttons {
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1.2px solid transparent;
+  background-color: #f5f8f9;
+  -webkit-transition: all 250ms ease-in;
+  -moz-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.form_left_panel {
+  background-color: $sunflower-yellow;
+
+  @media (min-width: 1024px) {
+    border-radius: 25px 0 0 25px;
+  }
+}
+
+.form_left_panel img.profile {
+  width: 60%;
+  margin: 50px 0;
+}
+
+.date {
+  background: url(../images/calendar.png) no-repeat 95.5% 45% #fff;
+  cursor: pointer;
+  padding: 8px 0;
+}

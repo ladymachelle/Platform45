@@ -162,7 +162,7 @@ h2 {
     width: 100%; } }
 
 .form {
-  padding: 70px 50px;
+  padding: 39px 50px;
   margin: 0 0 14px; }
 
 .form_fieldset_group {
@@ -181,8 +181,22 @@ h2 {
   padding: 20px;
   background: #f5f8f9;
   border-radius: 8px;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in; }
+
+.form_input:focus, .form_input:active {
+  border: 1.2px solid #cad7dd;
+  background: #f5f8f9;
   -webkit-transition: all 250ms ease-in-out 250ms;
   transition: all 250ms ease-in-out 250ms; }
+
+.form_input:hover {
+  background: #e0e5eb;
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms; }
+
+:required {
+  border: 1px solid #ffd500; }
 
 .form_left_panel {
   background-color: #ffd500; }
@@ -192,7 +206,13 @@ h2 {
 
 .form_left_panel img.profile {
   width: 60%;
-  margin: 50px 0; }
+  margin: 50px 0;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in; }
+
+.form_left_panel img:hover {
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in; }
 
 .form_radio_group {
   position: relative;
@@ -240,6 +260,12 @@ h2 {
   background-position: center center;
   background-repeat: no-repeat; }
 
+.form_input__radio.female:hover::before {
+  border: 1px solid #f5f8f9; }
+
+.form_input__radio.male:hover::before {
+  border: 1px solid #f5f8f9; }
+
 .form_input__radio.membership {
   margin-right: 21px; }
 
@@ -253,7 +279,7 @@ h2 {
   background-color: #b1bfcd; }
 
 .form_input__radio.membership:hover::before {
-  background-image: url(../images/card.png); }
+  border: 1px solid #f5f8f9; }
 
 @media screen and (max-width: 1024px) {
   .form_input__radio.membership {
@@ -265,6 +291,18 @@ h2 {
 
 @media screen and (max-width: 240px) {
   .form_input__radio.membership {
+    margin-right: 10px; } }
+
+@media screen and (max-width: 1024px) {
+  .form_input__radio.gendar {
+    margin-right: 21px; } }
+
+@media screen and (max-width: 768px) {
+  .form_input__radio.gendar {
+    margin-right: 10px; } }
+
+@media screen and (max-width: 240px) {
+  .form_input__radio.gendar {
     margin-right: 10px; } }
 
 .radio_buttons {
