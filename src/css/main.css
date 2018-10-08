@@ -163,7 +163,9 @@ h2 {
 
 .form {
   padding: 39px 50px;
-  margin: 0 0 14px; }
+  margin: 0 0 14px;
+  position: relative;
+  z-index: 2; }
 
 .form_fieldset_group {
   position: relative;
@@ -184,14 +186,8 @@ h2 {
   -webkit-transition: all 250ms ease-in;
   transition: all 250ms ease-in; }
 
-.form_input:focus, .form_input:active {
-  border: 1.2px solid #cad7dd;
-  background: #f5f8f9;
-  -webkit-transition: all 250ms ease-in-out 250ms;
-  transition: all 250ms ease-in-out 250ms; }
-
 .form_input:hover {
-  background: #e0e5eb;
+  border: 1.2px solid #cad7dd;
   -webkit-transition: all 250ms ease-in-out 250ms;
   transition: all 250ms ease-in-out 250ms; }
 
@@ -211,8 +207,10 @@ h2 {
   transition: all 250ms ease-in; }
 
 .form_left_panel img:hover {
-  -webkit-transition: all 250ms ease-in;
-  transition: all 250ms ease-in; }
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms; }
 
 .form_radio_group {
   position: relative;
@@ -226,7 +224,7 @@ h2 {
   top: -20px; }
 
 .radio_hidden {
-  opacity: 0; }
+  visibility: hidden; }
 
 .form_input__radio {
   position: relative;
@@ -260,12 +258,6 @@ h2 {
   background-position: center center;
   background-repeat: no-repeat; }
 
-.form_input__radio.female:hover::before {
-  border: 1px solid #f5f8f9; }
-
-.form_input__radio.male:hover::before {
-  border: 1px solid #f5f8f9; }
-
 .form_input__radio.membership {
   margin-right: 21px; }
 
@@ -279,7 +271,9 @@ h2 {
   background-color: #b1bfcd; }
 
 .form_input__radio.membership:hover::before {
-  border: 1px solid #f5f8f9; }
+  background-color: #f5f8f9;
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms; }
 
 @media screen and (max-width: 1024px) {
   .form_input__radio.membership {
@@ -318,20 +312,13 @@ h2 {
   -webkit-transition: all 250ms ease-in;
   transition: all 250ms ease-in; }
 
-.form_left_panel {
-  background-color: #ffd500; }
-  @media (min-width: 1024px) {
-    .form_left_panel {
-      border-radius: 25px 0 0 25px; } }
-
-.form_left_panel img.profile {
-  width: 60%;
-  margin: 50px 0; }
-
 .date {
-  background: url(../images/calendar.png) no-repeat 95.5% 45% #fff;
+  background: url(../images/calendar.png) no-repeat 95.5% 45%;
   cursor: pointer;
   padding: 8px 0; }
+
+.hide {
+  height: 0; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -469,33 +456,6 @@ table {
 fieldset {
   border: none; }
 
-p.toggle {
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: bold;
-  color: #5b5b5b;
-  margin: 0px;
-  padding: 0px;
-  padding-left: 18px; }
-
-p.add_active {
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: bold;
-  color: #5b5b5b;
-  margin: 0px;
-  padding: 0px;
-  padding-left: 18px; }
-
-#slide {
-  position: fixed;
-  background: #ccc;
-  display: block;
-  width: 100%; }
-
-#content {
-  display: block; }
-
 .arrow {
   margin-top: 95px;
   margin-bottom: 30px; }
@@ -522,10 +482,20 @@ p.add_active {
   background-color: #f5f8f9;
   color: #383838; }
 
-.user_heading {
+.profile_heading {
   margin: 0 auto; }
 
-.user_description {
+.profile_description {
   margin: 0 auto;
   width: 70%;
   margin-top: 30px; }
+
+.button_arrow {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  display: block;
+  margin: 74px auto 6px auto; }
+
+.button_arrow img {
+  margin: 1px auto 61px auto; }

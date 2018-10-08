@@ -15,24 +15,40 @@
         <section class="grid grid_4 small_12 medium_12 large_5">
             <div class="form_left_panel">
                 <img class="profile" src="images/profile-image.png">
-                <h1 class="user_heading">Front-end challenge!</h1>
-                <h2 class="user_description">This is a design that you will need to code up and impress us.</h2>
-                <img class="arrow" src="images/arrow.png">
+                <h1 class="profile_heading">Front-end challenge!</h1>
+                <h2 class="profile_description">This is a design that you will need to code up and impress us.</h2>
+                <button class="button_arrow"><img src="images/arrow.png"></button>
             </div>
         </section>
-        <section class="grid grid_7 small_12 medium_12">
-            <form class="form">
+
+        <!-- <section  class="grid grid_7 small_12 medium_12">
+            <article>
+                <h3>My World Today</h3>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. <a href="#">View all
+                        days</a> eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat
+                    eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi,
+                    condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
+                    condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis
+                    pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas
+                    augue, eu vulputate magna eros eu erat. Aliquam erat</p>
+            </article>
+        </section>  -->
+
+        <section id="content" class="grid grid_7 small_12 medium_12">
+            <form class="form" id="form_clear">
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3 form_label small_12 medium_12" for="name">Name</label>
-                    <input class="grid grid_8 form_input small_12 medium_12" required type="text" Name="Name" placeholder="Kendall Jenner">
+                    <input class="grid grid_8 form_input small_12 medium_12" Name="Name" placeholder="Kendall Jenner">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3  small_12 medium_12 form_label">Gender</label>
                     <div class="col_sm_12 col_m_12 form_group__radio">
-                        <label class="form_input__radio gendar male" for="male">
-                            <input class="radio_hidden" required id="male" type="radio" value="male" name="gender"> Male
+                        <label class="form_input__radio male gendar" for="male">
+                            <input class="radio_hidden" required id="male" type="radio" value="male" name="gender">
+                            Male
                         </label>
-                        <label class="form_input__radio gendar female" for="female">
+                        <label class="form_input__radio female gendar" for="female">
                             <input class="radio_hidden" id="female" type="radio" value="female" name="gender"> Female
                         </label>
                     </div>
@@ -43,7 +59,7 @@
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3 form_label small_12 medium_12" for="email">Email</label>
-                    <input class="grid grid_8 form_input small_12 medium_12" type="text" name="Email" placeholder="kendall@email.com">
+                    <input class="grid grid_8 form_input small_12 medium_12" type="email" name="email" placeholder="kendall@email.com">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3  form_label small_12 medium_12" for="mobile">Mobile</label>
@@ -70,12 +86,13 @@
                     </div>
                 </fieldset>
                 <fieldset class="form_fieldset_group">
-                    <input class="button button_grey small_12 medium_12" type="reset" value="cancel">
+                    <input class="button button_grey small_12 medium_12" type="reset" onclick="myFunction()" value="cancel">
                     <input class="button button_blue small_12 medium_12" type="submit" value="save">
                 </fieldset>
             </form>
         </section>
     </div>
+    <script src="js/scripts.js" type="text/javascript"></script>
 </body>
 
 </html>

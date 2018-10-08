@@ -3,6 +3,8 @@
 .form {
   padding: 39px 50px;
   margin: 0 0 14px;
+  position: relative;
+    z-index: 2;
 }
 
 .form_fieldset_group {
@@ -28,23 +30,15 @@
   transition: all 250ms ease-in;
 }
 
-.form_input:focus, .form_input:active {
-  border: 1.2px solid #cad7dd;
-  background: #f5f8f9;
-  -webkit-transition: all 250ms ease-in-out 250ms;
-  -moz-transition: all 250ms ease-in-out 250ms;
-  transition: all 250ms ease-in-out 250ms;
-}
-
 .form_input:hover {
-  background: #e0e5eb;
+  border: 1.2px solid $cloudy-blue;
   -webkit-transition: all 250ms ease-in-out 250ms;
   -moz-transition: all 250ms ease-in-out 250ms;
   transition: all 250ms ease-in-out 250ms;
 }
 
 :required {
-  border:1px solid $sunflower-yellow;
+  border: 1px solid $sunflower-yellow;
 }
 
 .form_left_panel {
@@ -64,11 +58,13 @@
 }
 
 .form_left_panel img:hover {
-  -webkit-transition: all 250ms ease-in;
-  -moz-transition: all 250ms ease-in;
-  transition: all 250ms ease-in;
+  transform: scale(1.2);
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  -ms-transition: all 250ms ease-in-out 250ms;
+  -o-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
 }
-
 
 .form_radio_group {
   position: relative;
@@ -81,8 +77,9 @@
   margin-right: 65px;
   top: -20px;
 }
+
 .radio_hidden {
-  opacity: 0;
+  visibility: hidden;
 }
 
 .form_input__radio {
@@ -90,7 +87,7 @@
   display: inline-block;
   margin-right: 65px;
   top: -20px;
-  color: #b1bfcd;
+  color: $cloudy-blue-two;
   -webkit-transition: all 250ms ease-in-out 250ms;
   -moz-transition: all 250ms ease-in-out 250ms;
   transition: all 250ms ease-in-out 250ms;
@@ -104,7 +101,7 @@
   width: 50px;
   height: 50px;
   top: 20px;
-  background-color: #f5f8f9;
+  background-color: $pale-grey;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -125,17 +122,10 @@
   background-repeat: no-repeat;
 }
 
-.form_input__radio.female:hover::before {
-  border:1px solid $pale-grey;
-}
-
-.form_input__radio.male:hover::before {
-  border:1px solid $pale-grey;
-}
-
 .form_input__radio.membership {
   margin-right: 21px;
 }
+
 
 .form_input__radio.membership:before {
   background-image: url(../images/card.png);
@@ -145,11 +135,14 @@
 
 .form_input__radio.membership.checked:before {
   background-image: url(../images/card.png);
-  background-color: #b1bfcd;
+  background-color: $cloudy-blue-two;
 }
 
 .form_input__radio.membership:hover::before {
-  border:1px solid $pale-grey;
+  background-color: $pale-grey;
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
 }
 
 @media screen and (max-width: 1024px) {
@@ -195,27 +188,18 @@
   height: 50px;
   border-radius: 50%;
   border: 1.2px solid transparent;
-  background-color: #f5f8f9;
+  background-color: $pale-grey;
   -webkit-transition: all 250ms ease-in;
   -moz-transition: all 250ms ease-in;
   transition: all 250ms ease-in;
 }
 
-.form_left_panel {
-  background-color: $sunflower-yellow;
-
-  @media (min-width: 1024px) {
-    border-radius: 25px 0 0 25px;
-  }
-}
-
-.form_left_panel img.profile {
-  width: 60%;
-  margin: 50px 0;
-}
-
 .date {
-  background: url(../images/calendar.png) no-repeat 95.5% 45% #fff;
+  background: url(../images/calendar.png) no-repeat 95.5% 45%;
   cursor: pointer;
   padding: 8px 0;
+}
+
+.hide {
+  height: 0;
 }

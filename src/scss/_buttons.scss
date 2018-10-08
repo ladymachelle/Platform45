@@ -16,7 +16,7 @@
   margin: 10px 5px;
   padding: 16px 32px;
   border: none;
-  font-size:14.8px;
+  font-size: 14.8px;
   text-transform: uppercase;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -34,12 +34,25 @@
   color: $black;
 }
 
-.user_heading{
-  margin:0 auto;
+.profile_heading {
+  margin: 0 auto;
 }
 
-.user_description{
-  margin:0 auto;
-  width:70%;
-  margin-top:30px;
+.profile_description {
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 30px;
 }
+
+.button_arrow {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  display: block;
+  margin: 74px auto 6px auto;
+}
+
+.button_arrow img{
+  margin: 1px auto 61px auto;
+}
+
