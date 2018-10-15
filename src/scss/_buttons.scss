@@ -5,9 +5,10 @@
   margin-bottom: 30px;
 }
 
-.button-container {
+.button_container {
   float: right;
   margin-top: 30px;
+  width:80%
 }
 
 .button {
@@ -20,9 +21,11 @@
   text-transform: uppercase;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border-radius: 5px;
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+  cursor: pointer;
 }
 
 .button_blue {
@@ -30,18 +33,8 @@
   color: $white;
 }
 .button_grey {
-  background-color: $pale-grey;
+  background-color: $cloudy-blue;
   color: $black;
-}
-
-.profile_heading {
-  margin: 0 auto;
-}
-
-.profile_description {
-  margin: 0 auto;
-  width: 70%;
-  margin-top: 30px;
 }
 
 .button_arrow {

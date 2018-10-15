@@ -31,6 +31,14 @@ h2 {
   padding-top: 30px;
   font-weight: normal; }
 
+.profile_heading {
+  margin: 0 auto; }
+
+.profile_description {
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 30px; }
+
 .grid {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -162,7 +170,7 @@ h2 {
     width: 100%; } }
 
 .form {
-  padding: 39px 50px;
+  padding: 45px 50px;
   margin: 0 0 14px;
   position: relative;
   z-index: 2; }
@@ -195,7 +203,8 @@ h2 {
   border: 1px solid #ffd500; }
 
 .form_left_panel {
-  background-color: #ffd500; }
+  background-color: #ffd500;
+  height: 100%; }
   @media (min-width: 1024px) {
     .form_left_panel {
       border-radius: 25px 0 0 25px; } }
@@ -252,6 +261,13 @@ h2 {
   background-image: url(../images/male.png);
   background-position: center center;
   background-repeat: no-repeat; }
+
+.form_input__radio.male.checked:before {
+  background-image: url(../img/male-active.svg);
+  background-color: #b1bfcd; }
+
+.form_input__radio.male:hover::before {
+  background-image: url(../img/male-active.svg); }
 
 .form_input__radio.female:before {
   background-image: url(../images/female.png);
@@ -319,6 +335,27 @@ h2 {
 
 .hide {
   height: 0; }
+
+.slide_panel {
+  background-color: #ff9200;
+  display: block;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  padding: 120px 85px;
+  text-align: left;
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms; }
+
+.slide_panel h3 {
+  line-height: 1.53;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: bold; }
+
+.slide_panel p {
+  line-height: 1.53;
+  font-size: 16px; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -460,9 +497,10 @@ fieldset {
   margin-top: 95px;
   margin-bottom: 30px; }
 
-.button-container {
+.button_container {
   float: right;
-  margin-top: 30px; }
+  margin-top: 30px;
+  width: 80%; }
 
 .button {
   display: inline-block;
@@ -472,23 +510,18 @@ fieldset {
   border: none;
   font-size: 14.8px;
   text-transform: uppercase;
-  border-radius: 5px; }
+  border-radius: 5px;
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+  cursor: pointer; }
 
 .button_blue {
   background-color: #49c8a8;
   color: #ffffff; }
 
 .button_grey {
-  background-color: #f5f8f9;
+  background-color: #cad7dd;
   color: #383838; }
-
-.profile_heading {
-  margin: 0 auto; }
-
-.profile_description {
-  margin: 0 auto;
-  width: 70%;
-  margin-top: 30px; }
 
 .button_arrow {
   border: none;

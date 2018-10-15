@@ -1,7 +1,7 @@
 @import "variables";
 
 .form {
-  padding: 39px 50px;
+  padding: 45px 50px;
   margin: 0 0 14px;
   position: relative;
     z-index: 2;
@@ -43,6 +43,7 @@
 
 .form_left_panel {
   background-color: $sunflower-yellow;
+  height:100%;
 
   @media (min-width: 1024px) {
     border-radius: 25px 0 0 25px;
@@ -114,6 +115,15 @@
   background-image: url(../images/male.png);
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.form_input__radio.male.checked:before {
+  background-image: url(../img/male-active.svg);
+  background-color: #b1bfcd;
+}
+
+.form_input__radio.male:hover::before {
+  background-image: url(../img/male-active.svg);
 }
 
 .form_input__radio.female:before {
@@ -203,3 +213,30 @@
 .hide {
   height: 0;
 }
+
+.slide_panel {
+  background-color: $tangerine;
+  display: block;
+  height: 100%;
+  top: 0;
+  width:100%;
+  padding: 120px 85px;
+  text-align:left;
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+}
+
+
+.slide_panel h3 {
+  line-height: 1.53;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight:bold;
+}
+
+.slide_panel p {
+  line-height: 1.53;
+  font-size:16px;
+}
+
