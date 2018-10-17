@@ -1,14 +1,9 @@
 @import "variables";
 
-.arrow {
-  margin-top: 95px;
-  margin-bottom: 30px;
-}
-
 .button_container {
   float: right;
   margin-top: 30px;
-  width:80%
+  width: 80%;
 }
 
 .button {
@@ -45,7 +40,101 @@
   margin: 74px auto 6px auto;
 }
 
-.button_arrow img{
+.button_arrow img {
   margin: 1px auto 61px auto;
 }
 
+.button_rotate {
+  transform: rotate(180deg);
+}
+
+
+
+.user_button {
+  position: relative;
+  width: 62px;
+  height: 62px;
+  background: #383838;
+  overflow: hidden;
+  margin: 50px auto 116px;
+  transform-origin: center center;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -khtml-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  -ms-transition: all 250ms ease-in-out 250ms;
+  -o-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+}
+
+.user_button img {
+  margin-left: -1px;
+  margin-top: -2px;
+}
+
+.user_button img:hover {
+  transform: scale(1.3);
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -khtml-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  -ms-transition: all 250ms ease-in-out 250ms;
+  -o-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+}
+
+.user_button.open img {
+  transform: rotateY(180deg);
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -khtml-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  -ms-transition: all 250ms ease-in-out 250ms;
+  -o-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+}
+
+@media screen and (max-width: 768px) {
+  .user_button img, .user_button img:hover {
+    transform: rotateZ(90deg) scale(1);
+    -webkit-transition: all 250ms ease-in-out 250ms;
+    -khtml-transition: all 250ms ease-in-out 250ms;
+    -moz-transition: all 250ms ease-in-out 250ms;
+    -ms-transition: all 250ms ease-in-out 250ms;
+    -o-transition: all 250ms ease-in-out 250ms;
+    transition: all 250ms ease-in-out 250ms;
+  }
+  .user_button.open img {
+    transform: rotateZ(-90deg) scale(1);
+    -webkit-transition: all 250ms ease-in-out 250ms;
+    -khtml-transition: all 250ms ease-in-out 250ms;
+    -moz-transition: all 250ms ease-in-out 250ms;
+    -ms-transition: all 250ms ease-in-out 250ms;
+    -o-transition: all 250ms ease-in-out 250ms;
+    transition: all 250ms ease-in-out 250ms;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .user_button img, .user_button img:hover {
+    transform: rotateZ(90deg) scale(1);
+    -webkit-transition: all 250ms ease-in-out 250ms;
+    -khtml-transition: all 250ms ease-in-out 250ms;
+    -moz-transition: all 250ms ease-in-out 250ms;
+    -ms-transition: all 250ms ease-in-out 250ms;
+    -o-transition: all 250ms ease-in-out 250ms;
+    transition: all 250ms ease-in-out 250ms;
+  }
+  .user_button.open img {
+    transform: rotateZ(-90deg) scale(1);
+    -webkit-transition: all 250ms ease-in-out 250ms;
+    -khtml-transition: all 250ms ease-in-out 250ms;
+    -moz-transition: all 250ms ease-in-out 250ms;
+    -ms-transition: all 250ms ease-in-out 250ms;
+    -o-transition: all 250ms ease-in-out 250ms;
+    transition: all 250ms ease-in-out 250ms;
+  }
+}

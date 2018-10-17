@@ -15,10 +15,10 @@
     <div class="container">
         <section class="grid grid_4 small_12 medium_12 large_5">
             <div class="form_left_panel">
-                <img class="profile" src="images/profile-image.png">
+                <img class="profile" src="images/profile-image.svg">
                 <h1 class="profile_heading">Front-end challenge!</h1>
                 <h2 class="profile_description">This is a design that you will need to code up and impress us.</h2>
-                <button class="button_arrow" onclick="toggle()"><img src="./images/arrow.png"></button>
+                <button class="user_button" onclick="toggle()"><img src="./images/arrow.png"></button>
             </div>
         </section>
 
@@ -27,60 +27,63 @@
                 <article>
                     <h3>My World Today</h3>
                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. <a href="#">View all
-                            days</a> eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat
+                        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. <a href="#">View
+                            all
+                            days</a> eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris
+                        placerat
                         eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi,
                         condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt
-                        condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis
+                        condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in
+                        turpis
                         pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas
                         augue, eu vulputate magna eros eu erat. Aliquam erat</p>
                 </article>
             </section>
-            <form class="form" id="form_clear">
-                <fieldset class="form_fieldset_group" >
-                    <label class="grid grid_3 form_label small_12 medium_12" for="name">Name</label>
+            <form class="form" id="form" name="form" onsubmit="return(validate());">
+                <fieldset class="form_fieldset_group">
+                    <label class="grid grid_3 form_label small_12 medium_12">Name</label>
                     <input class="grid grid_8 form_input small_12 medium_12" Name="Name" type="text" placeholder="Kendall Jenner">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3  small_12 medium_12 form_label">Gender</label>
                     <div class="col_sm_12 col_m_12 form_group__radio">
-                        <label class="form_input__radio male gendar" for="male">
-                            <input class="radio_hidden" required id="male" type="radio" value="male" name="gender">
+                        <label class="form_input__radio male gendar">
+                            <input class="radio_hidden" required id="male" type="radio" name="gender">
                             Male
                         </label>
-                        <label class="form_input__radio female gendar" for="female">
+                        <label class="form_input__radio female gendar">
                             <input class="radio_hidden" id="female" type="radio" value="female" name="gender"> Female
                         </label>
                     </div>
                 </fieldset>
                 <fieldset class="form_fieldset_group">
-                    <label class="grid grid_3 form_label small_12 medium_12" for="date">Date of birth</label>
-                    <input class="grid grid_8 form_input medium_12" type="date" name="date" placeholder="date">
+                    <label class="grid grid_3 form_label small_12 medium_12">Date of birth</label>
+                    <input class="grid grid_8 form_input  medium_12" type="date" name="date">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
-                    <label class="grid grid_3 form_label small_12 medium_12" for="email">Email</label>
-                    <input class="grid grid_8 form_input small_12 medium_12" type="email" name="email" placeholder="kendall@email.com">
+                    <label class="grid grid_3 form_label small_12 medium_12">Email</label>
+                    <input class="grid grid_8 form_input small_12 medium_12" type="text" name="email" placeholder="kendall@email.com">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
-                    <label class="grid grid_3  form_label small_12 medium_12" for="mobile">Mobile</label>
-                    <input class="grid grid_8 form_input small_12 medium_12" type="mobile" Name="mobile" placeholder="mobile">
+                    <label class="grid grid_3  form_label small_12 medium_12">Mobile</label>
+                    <input class="grid grid_8 form_input small_12 medium_12" type="text" Name="mobile" placeholder="mobile">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
-                    <label class="grid grid_3 form_label small_12 medium_12" for="customer id">Customer ID</label>
-                    <input class="grid grid_8 form_input small_12 medium_12" type="text" Name="Customer ID" placeholder="Customer ID">
+                    <label class="grid grid_3 form_label small_12 medium_12">Customer ID</label>
+                    <input class="grid grid_8 form_input small_12 medium_12" type="text" Name="customerId" placeholder="Customer ID">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3  small_12 medium_12 form_label">Membership</label>
                     <div class="col_sm_12 col_m_12 form_group__radio">
-                        <label class="form_input__radio membership" for="classic">
-                            <input class="radio_hidden" id="classic" type="radio" value="classic" name="membership">
+                        <label class="form_input__radio membership">
+                            <input class="radio_hidden " id="classic" type="radio" value="classic" name="membership">
                             Classic
                         </label>
-                        <label class="form_input__radio membership" for="silver">
+                        <label class="form_input__radio membership">
                             <input class="radio_hidden" id="silver" type="radio" value="silver" name="membership">
                             Silver
                         </label>
-                        <label class="form_input__radio membership" for="gold">
+                        <label class="form_input__radio membership">
                             <input class="radio_hidden" id="gold" type="radio" value="gold" name="membership"> Gold
                         </label>
                     </div>
