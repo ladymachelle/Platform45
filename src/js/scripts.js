@@ -1,56 +1,54 @@
 function clearForm() {
-    document.getElementById("form").reset();
+  document.getElementById("form").reset();
 }
 
 function expand() {
-    var form = document.getElementById("form");
-    var blob = document.getElementById("blob");
-    form.style.display = "none";
-    blob.style.display = "block";
+  var form = document.getElementById("form");
+  var blob = document.getElementById("blob");
 }
 
 function collapse() {
-    var form = document.getElementById("form");
-    var blob = document.getElementById("blob");
-    form.style.display = "block";
-    blob.style.display = "none";
+  var form = document.getElementById("form");
+  var blob = document.getElementById("blob");
 }
 
 function toggle() {
-    var form = document.getElementById("form");
-    form.style.display === "none" ? collapse() : expand();
-    // buttonElement.classList.toggle('button_rotate'); 
+  var form = document.querySelector("slide_panel");
+  var list = Object.values("form.classList");
+  var button = document.querySelector("user_button");
+
+  list.map(x => {
+    if (x === "slide") {
+      form.classList.remove("slide");
+      button.classList.remove("user_button_rotate");
+    } else {
+      form.classList.add("slide");
+      button.classList.add("user_button_rotate");
+    }
+  });
 }
+// function validate() {
+//   if (document.form.name.value == "") {
+//     alert("Please provide your name!");
+//     document.form.name.focus();
+//     return false;
+//   }
 
+//   if (document.form.email.value == "") {
+//     document.getElementById("error").innerHTML = "error here";
+//     document.form.email.focus();
+//     return false;
+//   }
 
+//   if (
+//     document.form.mobile.value == "" ||
+//     isNaN(document.form.mobile.value) ||
+//     document.form.mobile.value.length != 12
+//   ) {
+//     alert("Please provide a valid mobile number.");
+//     document.form.mobile.focus();
+//     return false;
+//   }
 
-function validate()
-{
-
-   if( document.form.name.value == "" )
-   {
-      alert( "Please provide your name!" );
-      document.form.name.focus() ;
-      return false;
-   }
-
-   if( document.form.email.value == "" )
-   {
-      alert( "Please provide your Email!" );
-      document.form.email.focus() ;
-      return false;
-   }
-
-   if( document.form.mobile.value == "" ||
-   isNaN( document.form.mobile.value ) ||
-   document.form.mobile.value.length != 5 )
-   {
-      alert( "Please provide a valid mobile number." );
-      document.form.Zip.focus() ;
-      return false;
-   }
-
-   return( true );
-}
-
-
+//   return true;
+// }

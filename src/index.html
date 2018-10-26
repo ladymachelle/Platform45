@@ -18,12 +18,12 @@
                 <img class="profile" src="images/profile-image.svg">
                 <h1 class="profile_heading">Front-end challenge!</h1>
                 <h2 class="profile_description">This is a design that you will need to code up and impress us.</h2>
-                <button class="user_button" onclick="toggle()"><img src="./images/arrow.png"></button>
+                <button class="user_button slide" onclick="toggle()"><img src="./images/arrow.png"></button>
             </div>
         </section>
 
-        <section id="content" class="grid grid_7 small_12 medium_12">
-            <section class="grid grid_7 small_12 medium_12 slide_panel" id="blob" style="display: none">
+        <section id="content" class="grid grid_7 small_12 medium_12" style="position: relative; overflow: hidden">
+            <section class="grid grid_7 small_12 medium_12 slide_panel">
                 <article>
                     <h3>My World Today</h3>
                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
@@ -46,35 +46,36 @@
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3  small_12 medium_12 form_label">Gender</label>
-                    <div class="col_sm_12 col_m_12 form_group__radio">
+                    <!-- <div class="grid grid_9 small_12 medium_12 radio_align">
                         <label class="form_input__radio male gendar">
-                            <input class="radio_hidden" required id="male" type="radio" name="gender">
+                            <input class="radio_hidden" required id="male" type="radio" name="male">
                             Male
                         </label>
                         <label class="form_input__radio female gendar">
-                            <input class="radio_hidden" id="female" type="radio" value="female" name="gender"> Female
+                            <input class="radio_hidden" id="female" type="radio" value="female" name="female"> Female
                         </label>
-                    </div>
+                    </div> -->
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3 form_label small_12 medium_12">Date of birth</label>
-                    <input class="grid grid_8 form_input  medium_12" type="date" name="date">
+                    <input class="grid grid_8 form_input form_input_date  medium_12" type="date" name="date">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3 form_label small_12 medium_12">Email</label>
                     <input class="grid grid_8 form_input small_12 medium_12" type="text" name="email" placeholder="kendall@email.com">
+                    <p id="error"></p>
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3  form_label small_12 medium_12">Mobile</label>
-                    <input class="grid grid_8 form_input small_12 medium_12" type="text" Name="mobile" placeholder="mobile">
+                    <input class="grid grid_8 form_input small_12 medium_12" type="text" Name="mobile" placeholder="+91 98765 43210">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3 form_label small_12 medium_12">Customer ID</label>
-                    <input class="grid grid_8 form_input small_12 medium_12" type="text" Name="customerId" placeholder="Customer ID">
+                    <input class="grid grid_8 form_input small_12 medium_12" type="text" Name="customerId" placeholder="576802-ERD0348 45">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3  small_12 medium_12 form_label">Membership</label>
-                    <div class="col_sm_12 col_m_12 form_group__radio">
+                    <div class="grid grid_8 small_12 medium_12 radio_align">
                         <label class="form_input__radio membership">
                             <input class="radio_hidden " id="classic" type="radio" value="classic" name="membership">
                             Classic
