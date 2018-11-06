@@ -13,19 +13,16 @@ function collapse() {
 }
 
 function toggle() {
-  var form = document.querySelector("slide_panel");
-  var list = Object.values("form.classList");
-  var button = document.querySelector("user_button");
+  var form = document.querySelector("[class*=slide_panel]");
+  var button = document.querySelector("button[class*=user_button]");
 
-  list.map(x => {
-    if (x === "slide") {
-      form.classList.remove("slide");
-      button.classList.remove("user_button_rotate");
-    } else {
-      form.classList.add("slide");
-      button.classList.add("user_button_rotate");
-    }
-  });
+  if (form.classList.contains("slide")) {
+    form.classList.remove("slide");
+    button.classList.remove("user_button_rotate");
+  } else {
+    form.classList.add("slide");
+    button.classList.add("user_button_rotate");
+  }
 }
 // function validate() {
 //   if (document.form.name.value == "") {
