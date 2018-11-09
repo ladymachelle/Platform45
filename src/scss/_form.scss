@@ -35,8 +35,53 @@
   transition: all 250ms ease-in-out 250ms;
 }
 
-:required {
-  border: 1px solid $sunflower-yellow;
+.form_input__error {
+  border-color: #ff9200;
+  color: #ff9200;
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+}
+
+.form_label__error {
+  position: relative;
+  color: #ff9200;
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  -ms-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+}
+
+.form_label__error:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background: #ff9200;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+}
+
+.form_input__success {
+  border-color: #60e6c5;
+  color: #60e6c5;
+}
+
+.form_input__error_message {
+  position: absolute;
+  color: #ff9200;
+  bottom: -15px;
+  right: 8.5%;
+  font-size: 8pt;
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
 }
 
 .form_left_panel {
@@ -143,7 +188,6 @@
 
 .form_input__radio.membership input:checked {
   background-image: url(../images/card-light.svg);
-  background-color: red;
 }
 
 .form_input__radio.membership:hover::before {

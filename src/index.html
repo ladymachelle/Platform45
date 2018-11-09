@@ -42,32 +42,31 @@
             <form class="form" id="form" name="form" onsubmit="return(validate());">
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3 form_label small_12 medium_12">Name</label>
-                    <input class="grid grid_8 form_input small_12 medium_12" Name="Name" type="text" placeholder="Kendall Jenner">
+                    <input id="name" class="grid grid_8 form_input small_12 medium_12" name="name" type="text" placeholder="Kendall Jenner">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3  small_12 medium_12 form_label">Gender</label>
-                    <!-- <div class="grid grid_9 small_12 medium_12 radio_align">
-                        <label class="form_input__radio male gendar">
+                     <div class="grid grid_9 small_12 medium_12 radio_align">
+                        <label class="form_input__radio male">
                             <input class="radio_hidden" required id="male" type="radio" name="male">
                             Male
                         </label>
-                        <label class="form_input__radio female gendar">
+                        <label class="form_input__radio female">
                             <input class="radio_hidden" id="female" type="radio" value="female" name="female"> Female
                         </label>
-                    </div> -->
+                    </div> 
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3 form_label small_12 medium_12">Date of birth</label>
-                    <input class="grid grid_8 form_input form_input_date  medium_12" type="date" name="date">
+                    <input id="date" class="grid grid_8 form_input form_input_date  medium_12" type="date" name="date">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3 form_label small_12 medium_12">Email</label>
-                    <input class="grid grid_8 form_input small_12 medium_12" type="text" name="email" placeholder="kendall@email.com">
-                    <p id="error"></p>
+                    <input id="email" class="grid grid_8 form_input small_12 medium_12" type="email" name="email" placeholder="kendall@email.com">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3  form_label small_12 medium_12">Mobile</label>
-                    <input class="grid grid_8 form_input small_12 medium_12" type="text" Name="mobile" placeholder="+91 98765 43210">
+                    <input id="mobile" class="grid grid_8 form_input small_12 medium_12" type="text" Name="mobile" placeholder="+91 98765 43210">
                 </fieldset>
                 <fieldset class="form_fieldset_group">
                     <label class="grid grid_3 form_label small_12 medium_12">Customer ID</label>

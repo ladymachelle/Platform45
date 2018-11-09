@@ -4,7 +4,7 @@
   "description": "Starter pack using gulp",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "nodemon --exec gulp"
   },
   "author": "Brad Traversy",
   "license": "ISC",
@@ -14,7 +14,8 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-sass": "^3.2.1",
-    "sync": "^0.2.5"
+    "sync": "^0.2.5",
+    "nodemon": "^1.18.6"
   },
   "dependencies": {},
   "repository": {
